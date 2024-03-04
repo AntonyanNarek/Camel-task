@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package example;
+
+// Сообщение, содержащее информацию о запросе
+message Request {
+  string client_ip = 1; // IP адрес клиента
+  string request_time = 2; // Время получения запроса
+  string guid = 3; // Уникальный идентификатор запроса
+  string request_data = 4; // Данные самого запроса
+}
